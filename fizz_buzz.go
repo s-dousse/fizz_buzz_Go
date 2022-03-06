@@ -5,6 +5,8 @@ func FizzBuzz(number int) (outcome string) {
 		outcome = "FizzBuzz"
 	} else if number%3 == 0 {
 		outcome = "Fizz"
+	} else if number%5 == 0 {
+		outcome = "Buzz"
 	}
 	return
 }

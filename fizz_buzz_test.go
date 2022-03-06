@@ -23,4 +23,11 @@ func TestFizzBuzz(t *testing.T) {
 
 		assertErrorMessage(t, got, want)
 	})
+
+	t.Run("it returns 'Buzz' when passed 5", func(t *testing.T) {
+		got := FizzBuzz(5)
+		want :=  "Buzz"
+
+		assertErrorMessage(t, got, want)
+	})
 }
